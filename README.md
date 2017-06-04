@@ -12,28 +12,27 @@ protobuf-net下载后的目录如下图
 
 Role.proto中的内容如下
 
-1.// 技能信息  
+// 技能信息  
 
-2.message VO_Skill  
+message VO_Skill  
 
-3.{  
+{  
 
-4.    required int32 skillGroupId = 1; // 技能id 
+    required int32 skillGroupId = 1; // 技能id 
 
-5.    required int32 level = 2; // 技能等级  
+    required int32 level = 2; // 技能等级  
 
-6.}  
+}  
+ 
+// 玩家信息消息  
+ 
+message CS_RoleInfo 
 
-7.  
-8.// 玩家信息消息  
-9.  
-10.message CS_RoleInfo 
+{ 
 
-11.{ 
+    required int32 playerId = 1; // 角色id
 
-12.    required int32 playerId = 1; // 角色id
-
-13.    repeated VO_Skill skills = 2; // 技能组  
+   repeated VO_Skill skills = 2; // 技能组  
 
 } 
 
