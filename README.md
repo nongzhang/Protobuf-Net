@@ -38,7 +38,7 @@ message CS_RoleInfo 
 
 其中字段message 你可以理解成c#中的类class ,VO_Skill 和 CS_RoleInfo均为类名。字段 required标示该字段是必须的，即实例化该类时必须对该字段赋值
 
-字段 repeated标示该字段是可以重复的，repeated VO_Skill skills 你可以理解成 List<VO_Skill>VO_Skill skills.
+字段 repeated标示该字段可以包含0-N个元素，其特性和optional一样，但是每一次可以包含多个值。可以看做是在传递一个数组的值或者List列表的值，repeated VO_Skill skills 你可以理解成 List<VO_Skill>VO_Skill skills.
 
 下一步是把Role.proto文件转化成.cs文件
 
