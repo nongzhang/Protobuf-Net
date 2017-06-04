@@ -23,7 +23,7 @@ message VO_Skill  
     required int32 level = 2; // 技能等级  
 
 }  
- 
+
 // 玩家信息消息  
  
 message CS_RoleInfo 
