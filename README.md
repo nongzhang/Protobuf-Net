@@ -11,19 +11,30 @@ protobuf-net下载后的目录如下图
 进入ProtoGen 中建一个记事本叫做Role.proto的文件，记住把文件后缀名改成.proto
 
 Role.proto中的内容如下
+
 1.// 技能信息  
+
 2.message VO_Skill  
+
 3.{  
-4.    required int32 skillGroupId = 1; // 技能id  
+
+4.    required int32 skillGroupId = 1; // 技能id 
+
 5.    required int32 level = 2; // 技能等级  
+
 6.}  
+
 7.  
 8.// 玩家信息消息  
 9.  
-10.message CS_RoleInfo  
-11.{  
-12.    required int32 playerId = 1; // 角色id  
+10.message CS_RoleInfo 
+
+11.{ 
+
+12.    required int32 playerId = 1; // 角色id
+
 13.    repeated VO_Skill skills = 2; // 技能组  
+
 } 
 
 其中字段message 你可以理解成c#中的类class ,VO_Skill 和 CS_RoleInfo均为类名。字段 required标示该字段是必须的，即实例化该类时必须对该字段赋值
